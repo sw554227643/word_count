@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>统计结果</title>
+    <h1>总字数为：{{ tongji }}</h1>
+    <h2>输入的文本是：{{ text }}</h2>
+    <h3>
+        出现频率
+        <br>
+        {%  for word,count in sort %}
+            {{ word }} - {{ count }}
+            <br>
+        {%  endfor %}
+    </h3>
+
+</head>
+<body>
+
+</body>
+</html>
